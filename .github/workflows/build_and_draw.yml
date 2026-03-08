@@ -1,3 +1,5 @@
+name: Build Firmware & Draw Keymap
+
 on: [workflow_dispatch]
 
 jobs:
