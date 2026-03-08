@@ -6,7 +6,7 @@
 #define BASE 0
 #define NAV  1
 #define SYM  2
-#define SETT 4
+#define SETT 3
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 #define MEH LS(LC(LALT))
@@ -95,8 +95,8 @@
             display-name = "Navigation";
             bindings = <
             &kp TAB      &trans       &trans      &trans        &kp LPAR                                          &kp RPAR     &trans       &kp UP        &trans        &trans 
-            &trans       &kp LCTRL    &kp LALT    &kp LGUI      &trans                                            &kp PG_DN    &kp LEFT     &kp DOWN      &kp RIGHT     &kp BSLH
-            &trans       &trans       &trans      &trans        &trans                                            &trans       &kp HOME     &kp END       &trans        &trans
+            &trans       &kp LCTRL    &kp LALT    &kp LGUI      &kp LBKT                                          &kp RBKT     &kp LEFT     &kp DOWN      &kp RIGHT     &kp BSLH
+            &trans       &trans       &trans      &trans        &kp LBRC                                          &kp RBRC     &kp HOME     &kp END       &trans        &trans
                                                                 &trans          &trans          &mo SETT          &trans
             >;
         };
