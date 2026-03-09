@@ -92,25 +92,24 @@
         };
 
         nav {
-            display-name = "Navigation";
             bindings = <
             &kp TAB      &trans       &trans      &trans        &kp LPAR                                          &kp RPAR     &trans       &kp UP        &trans        &trans 
-            &trans       &kp LCTRL    &kp LALT    &kp LGUI      &kp LBKT                                          &kp RBKT     &kp LEFT     &kp DOWN      &kp RIGHT     &kp BSLH
-            &trans       &trans       &trans      &trans        &kp LBRC                                          &kp RBRC     &kp HOME     &kp END       &trans        &trans
-                                                                &trans          &trans          &mo SETT          &trans
+            &sk LSFT     &sk LCTRL    &sk LALT    &sk LGUI      &kp LBKT                                          &kp RBKT     &kp LEFT     &kp DOWN      &kp RIGHT     &kp BSLH
+            &trans       &trans       &trans      &trans        &kp LBRC                                          &kp RBRC     &kp HOME     &kp END       &trans        &kp RET
+                                                                &sk LSFT         &trans        &mo SETT        &kp SPACE
             >;
         };
 
         sym {
             bindings = <
-            AS(N1)          AS(N2)          AS(N3)          AS(N4)          AS(N5)                                          AS(N6)          AS(N7)          AS(N8)          AS(N9)          AS(N0)
-            AS(GRAVE)       &sk LCTRL       &sk LALT        &sk LGUI        &sk LC(LALT)                                    AS(BSLH)        AS(MINUS)       AS(EQUAL)       AS(LBKT)        AS(RBKT)
-            &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &kp ENTER
-                                                                            &trans          &mo SETT        &trans          &trans
+            AS(N1)       AS(N2)       AS(N3)      AS(N4)          AS(N5)                                          AS(N6)          AS(N7)          AS(N8)          AS(N9)          AS(N0)
+            &sk LSFT     &sk LCTRL    &sk LALT    &sk LGUI        &trans                                          &trans          &sk LGUI        &sk LALT        &sk LCTRL       &sk LSFT
+            &trans       &trans       &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &kp RET
+                                                                  &sk LSFT       &mo SETT      &trans          &kp SPACE
             >;
         };
 
-        adj {
+        sett {
             bindings = <
             &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_CLR_ALL                                  &kp C_SLEEP     &trans          &trans          &kp C_BRI_DN    &kp C_BRI_UP
             &studio_unlock  &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &kp C_VOL_DN    &kp C_VOL_UP
