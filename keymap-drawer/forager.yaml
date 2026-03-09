@@ -32,10 +32,10 @@ layers:
   - .
   - RET
   - {t: LSFT, h: sticky}
-  - Navigation
+  - nav
   - sym
   - SPACE
-  Navigation:
+  nav:
   - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -46,10 +46,10 @@ layers:
   - UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LCTRL
-  - LALT
-  - LGUI
+  - {t: LSFT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LGUI, h: sticky}
   - '['
   - ']'
   - LEFT
@@ -65,11 +65,11 @@ layers:
   - HOME
   - END
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RET
+  - {t: LSFT, h: sticky}
   - {type: held}
-  - adj
-  - {t: ▽, type: trans}
+  - sett
+  - SPACE
   sym:
   - {t: '1', h: Sft+1}
   - {t: '2', h: Sft+2}
@@ -81,16 +81,16 @@ layers:
   - {t: '8', h: Sft+8}
   - {t: '9', h: Sft+9}
   - {t: '0', h: Sft+0}
-  - {t: '`', h: Sft+`}
+  - {t: LSFT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: LALT, h: sticky}
   - {t: LGUI, h: sticky}
-  - {t: Ctl+LALT, h: sticky}
-  - {t: \, h: Sft+\}
-  - {t: '-', h: Sft+-}
-  - {t: '=', h: Sft+=}
-  - {t: '[', h: 'Sft+['}
-  - {t: ']', h: 'Sft+]'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LSFT, h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -100,12 +100,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
-  - {t: ▽, type: trans}
-  - adj
+  - RET
+  - {t: LSFT, h: sticky}
+  - sett
   - {type: held}
-  - {t: ▽, type: trans}
-  adj:
+  - SPACE
+  sett:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
