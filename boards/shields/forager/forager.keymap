@@ -6,8 +6,7 @@
 #define BASE  0
 #define NAV   1
 #define SYM   2
-#define MACRO 3
-#define SETT  4
+#define SETT  3
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 #define MEH LS(LC(LALT))
@@ -97,7 +96,7 @@
             &kp TAB      &trans       &trans      &trans        &kp LPAR                                          &kp RPAR     &trans       &kp UP        &trans        &trans 
             &sk LSFT     &sk LCTRL    &sk LALT    &sk LGUI      &kp LBKT                                          &kp RBKT     &kp LEFT     &kp DOWN      &kp RIGHT     &kp BSLH
             &trans       &trans       &trans      &trans        &kp LBRC                                          &kp RBRC     &kp HOME     &kp END       &trans        &kp RET
-                                                                &sk LSFT        &trans         &mo MACRO         &kp SPACE
+                                                                &sk LSFT        &trans         &mo SYM           &kp SPACE
             >;
         };
 
@@ -106,16 +105,7 @@
             AS(N1)       AS(N2)       AS(N3)      AS(N4)          AS(N5)                                          AS(N6)          AS(N7)          AS(N8)          AS(N9)          AS(N0)
             &sk LSFT     &sk LCTRL    &sk LALT    &sk LGUI        &trans                                          &trans          &sk LGUI        &sk LALT        &sk LCTRL       &sk LSFT
             &trans       &trans       &trans      &trans          &trans                                          &trans          &trans          &trans          &trans          &kp RET
-                                                                  &sk LSFT      &mo MACRO       &trans         &kp SPACE
-            >;
-        };
-
-        macro {
-            bindings = <
-            &trans       &trans       &trans       &trans       &trans                                            &trans       &trans       &trans       &trans       &trans
-            &trans       &trans       &trans       &trans       &trans                                            &trans       &trans       &trans       &trans       &trans
-            &trans       &trans       &trans       &trans       &trans                                            &trans       &trans       &trans       &trans       &trans
-                                                                &trans          &trans          &trans            &trans
+                                                                  &sk LSFT      &mo NAV        &trans          &kp SPACE
             >;
         };
 
